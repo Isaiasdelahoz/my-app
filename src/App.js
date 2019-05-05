@@ -1,19 +1,18 @@
 import React from 'react';
 import logo from './logo.svg';
+import Welcome from './Welcome.js';
 import './App.css';
 
+
+
 function App() {
-	const names = ["Pedro", "Juan", "Isaías"];
+	const names = ["Pedro", "Juan", "German"];
   return (
-	<div>
-      <h1>Hola mundo</h1>
-      <p>paragrahp</p>
-      <ul>
-      {names.map(name => 
-      	<li>{name}</li>
-      	)}
-      </ul>
-    </div>
+  	<div>
+  		{names.map(name =>
+  			<Welcome name={name} />
+  		)}
+  	</div>
   );
 }
 
